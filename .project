@@ -20,6 +20,13 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>LoginData.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/sankar/OneDrive/Assignment/LoginData.xlsx</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1752141018225</id>

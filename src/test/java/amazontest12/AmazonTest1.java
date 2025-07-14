@@ -5,6 +5,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.Capabilities;
 import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
@@ -37,13 +38,24 @@ public class AmazonTest1 {
     }
 
     @Test
-    public void testAmazon() {
+    public void testAmazon() throws InterruptedException {
         driver.get("https://www.amazon.in/");
-        System.out.println("Title: " + driver.getTitle());
+        System.out.println("Page title: " + driver.getTitle());
+
+        // Print browser name from Grid session
+        Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
+        System.out.println("Running on browser: " + caps.getBrowserName());
+
+        // Keep session alive for 10 seconds to see it in Selenium Grid
+        Thread.sleep(10000); // 10 seconds
+
+        System.out.println("Test executed on: " + caps.getBrowserName());
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
