@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BSTACKDEMO Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.ExtentTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="E2E Tests(failed)">
+    <classes>
+      <class name="tests.AddToCartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testAddSingleItemToCart"/>
+          <include name="setUpPagesAndLogin"/>
+          <include name="testAddMultipleItemsToCart"/>
+          <include name="testRemoveItemFromCart"/>
+        </methods>
+      </class> <!-- tests.AddToCartTest -->
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="initPages"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testValidCheckoutFlow"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
+    </classes>
+  </test> <!-- E2E Tests(failed) -->
+</suite> <!-- Failed suite [BSTACKDEMO Automation Suite] -->
