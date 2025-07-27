@@ -26,6 +26,11 @@
 			<type>1</type>
 			<location>C:/Users/sankar/OneDrive/Assignment/LoginData.xlsx</location>
 		</link>
+		<link>
+			<name>src/test/resources/EmployeeData.xlsx</name>
+			<type>1</type>
+			<location>D:/Automation/AmazonSeleniumGridProject/amazontest12/src/test/resources/EmployeeData.xlsx</location>
+		</link>
 	</linkedResources>
 	<filteredResources>
 		<filter>

@@ -34,8 +34,6 @@
   <artifactId>log4j-api</artifactId>
   <version>2.22.1</version>
 </dependency>
-
-
     <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-ooxml</artifactId>
@@ -46,9 +44,51 @@
         <artifactId>extentreports</artifactId>
         <version>5.1.1</version>
     </dependency>
-    
-    </dependencies>
+    <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+<!-- Apache POI for Excel .xls and .xlsx support -->
+    <!-- For .xls and .xlsx -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.5</version>
+    </dependency>
 
+    <!-- For .xlsx (OOXML) support -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.5</version>
+    </dependency>
+
+    <!-- Optional: For handling Excel charts, XSLF, etc. -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+
+    <!-- XMLBeans dependency for POI -->
+    <dependency>
+        <groupId>org.apache.xmlbeans</groupId>
+        <artifactId>xmlbeans</artifactId>
+        <version>5.1.1</version>
+    </dependency>
+
+    <!-- Needed for dealing with compressed files (used by POI) -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>1.26.1</version>
+    </dependency>
+</dependencies>
+
+
+
+ 
     <build>
         <plugins>
             <plugin>
